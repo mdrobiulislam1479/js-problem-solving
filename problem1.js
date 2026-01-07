@@ -6,8 +6,8 @@
 // Input: "hello"
 // Output: "olleh"
 
-let mainInput = "hello";
+let str = "hello";
 
-let reverseOutput = mainInput.split("").reverse().join("");
+let reversed = str.split("").reverse().join("");
 
-console.log(reverseOutput);
+console.log(reversed);
