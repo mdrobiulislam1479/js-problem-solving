@@ -6,14 +6,17 @@
 // Input: "programming"
 // Output: 3
 
-let str = "programming";
-let vowels = "AEIOU";
-let count = 0;
+function countVowels(str) {
+  let vowels = "AEIOU";
+  let count = 0;
 
-for (let i = 0; i < str.length; i++) {
-  if (vowels.includes(str[i].toUpperCase())) {
-    count++;
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i].toUpperCase())) {
+      count++;
+    }
   }
+
+  console.log(count);
 }
 
-console.log(count);
+countVowels("programming");

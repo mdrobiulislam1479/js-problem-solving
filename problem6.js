@@ -6,9 +6,11 @@
 // Input: [1, 2, 3, 4]
 // Output: 10
 
-let numbers = [1, 2, 3, 4];
-let sum = 0;
+function sumNumbers(numbers) {
+  let sum = 0;
+  numbers.map((num) => (sum += num));
 
-numbers.map((num) => (sum += num));
+  console.log(sum);
+}
 
-console.log(sum);
+sumNumbers([1, 2, 3, 4]);

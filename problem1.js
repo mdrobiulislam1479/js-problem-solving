@@ -6,8 +6,9 @@
 // Input: "hello"
 // Output: "olleh"
 
-let str = "hello";
+function reverse(str) {
+  let result = str.split("").reverse().join("");
+  console.log(result);
+}
 
-let reversed = str.split("").reverse().join("");
-
-console.log(reversed);
+reverse("hello");

@@ -6,10 +6,12 @@
 // Input: "hello world"
 // Output: "Hello World"
 
-let str = "hello world";
-let arr = str.split(" ");
-let capitalized = arr.map((word) => word[0].toUpperCase() + word.slice(1));
+function capitalize(str) {
+  let arr = str.split(" ");
+  let capitalized = arr.map((word) => word[0].toUpperCase() + word.slice(1));
+  let result = capitalized.join(" ");
 
-let result = capitalized.join(" ");
+  console.log(result);
+}
 
-console.log(result);
+capitalize("hello world");
