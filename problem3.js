@@ -8,12 +8,12 @@
 // Input: "hello"
 // Output: false
 
-let str1 = "madam";
-let reversed1 = str1.split("").reverse().join("");
-let result1 = str1 === reversed1;
+function palindrome(str) {
+  let reversed = str.split("").reverse().join("");
+  let result = str === reversed;
 
-let str2 = "hello";
-let reversed2 = str2.split("").reverse().join("");
-let result2 = str2 === reversed2;
+  console.log(result);
+}
 
-console.log(result1, result2);
+palindrome("madam");
+palindrome("hello");
